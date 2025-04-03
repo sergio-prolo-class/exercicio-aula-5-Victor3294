@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="__Victor Blum__">
+    <title>Exercicio Aula 06</title>
+</head>
+
+<body>
+    <section>
+        <form>
+            <label for="titulo">Titulo da tarefa</label>
+            <input type="text" name="titulo" id="titulo">
+            <br>
+            <label for="nome-do-criador">Nome do Criador</label>
+            <input type="text" name="nome-do-criador" id="nome-do-criador">
+            <br>
+            <label for="nome-do-responsavel">Nome do Responsavel</label>
+            <input type="text" name="nome-do-responsavel" id="nome-do-responsavel">
+            <br>
+            <label for="descricao">Descrição</label>
+            <input type="text" name="descricao" id="descricao">
+            <br>
+            <label for="data-de-criacao">Data de Criação</label>
+            <input type="datetime-local" name="data-de-criacao" id="data-de-criacao">
+            <br>
+            <label for="data-de-inicio">Data de início</label>
+            <input type="date" name="data-de-inicio" id="data-de-inicio">
+            <br>
+            <label for="prazo-de-conclusao">Prazo de conclusão</label>
+            <input type="date" name="prazo-de-conclusao" id="prazo-de-conclusao">
+            <br>
+            <label for="dificuldade-da-tarefa">Dificuldade da tarefa</label>
+            <ul id="dificuldade-da-tarefa">
+                <li>
+                    <input type="radio" id="dificuldade-dificil" name="dificuldade" value="Dificil">
+                    <label for="dificuldade-dificil">Difícil</label>
+                </li>
+                <li>
+                    <input type="radio" id="dificuldade-medio" name="dificuldade" value="Medio">
+                    <label for="dificuldade-medio">Médio</label>
+                </li>
+                <li>
+                    <input type="radio" id="dificuldade-facil" name="dificuldade" value="Facil">
+                    <label for="dificuldade-facil">Fácil</label>
+                </li>
+            </ul>
+            <br>
+            <label for="repeticao-da-tarefa">Repetição da tarefa</label>
+            <select id="repeticao-da-tarefa" name="repeticao-da-tarefa">
+                <option value="Diaria">Diaria</option>
+                <option value="Mensal">Mensal</option>
+                <option value="Anual">Anual</option>
+                <option value="Unica">Unica</option>
+            </select>
+
+        </form>
+    </section>
+</body>
+
+</html>
