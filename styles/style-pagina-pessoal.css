@@ -109,6 +109,12 @@ td {
     justify-content: space-around;
 }
 
+.secao-flex h2 {
+    order: -3;
+    width: 80%;
+    text-align: center;
+}
+
 .coluna-galeria {
     display: flex;
     flex-wrap: wrap;
@@ -118,10 +124,22 @@ td {
     gap: 4px;
 }
 
+.coluna-galeria h3 {
+    width: 100%;
+    text-align: center;
+}
+
 .imagem-responsiva {
     max-width: 30%;
     height: auto;
     border-radius: 4px;
+    transition: 1.25s;
+}
+
+.imagem-responsiva:hover {
+    margin: 5px;
+    max-width: 35%;
+    box-shadow: 3px 6px #645e5e;
 }
 
 .coluna-lista-site {
@@ -129,11 +147,30 @@ td {
     order: -1;
     width: 45%;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.coluna-lista-site ul li a:hover {
+    font-size: 1.15em;
+    text-decoration: underline;
+    color: #1d4fbb;
 }
 
 .coluna-lista-filme {
     display: flex;
     width: 45%;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     order: -2;
+}
+
+.lista-filme-e-site li a {
+    transition: 1.5s;
+}
+
+.lista-filme-e-site li::first-letter {
+    text-transform: capitalize;
+    font-size: 1.05em;
 }
