@@ -1,6 +1,8 @@
 body {
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #2c3e50;
+    line-height: 1.6;
 }
 
 .container {
@@ -42,10 +44,18 @@ body {
 
 .botao-padrao {
     border: none;
-    width: 150px;
+    width: 50%;
+    font-size: 1.1em;
     padding: 0.50em;
     border-radius: 5px;
     background-color: rgb(96, 178, 216);
+    transition: 0.5s;
+}
+
+.botao-padrao:hover {
+    font-size: 1.3em;
+    padding: 0.75em;
+    width: 60%;
 }
 
 .container-botao {

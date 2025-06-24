@@ -4,6 +4,19 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: #2c3e50;
+}
+
 table {
     margin: 0;
     padding: 0;
@@ -20,11 +33,33 @@ a {
     box-sizing: inherit;
 }
 
+.img-hackerman {
+    max-width: 100%;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+
+.img-hackerman:hover {
+    transform: scale(1.05);
+}
+
 .container-texto-cabecalho {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2em;
+}
+
+.container-texto-cabecalho h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.container-texto-cabecalho p {
+    font-size: 1.1em;
+    color: #555;
 }
 
 .cap-tabela {
@@ -42,20 +77,27 @@ a {
 
 .container-lista {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px;
 }
 
 .caixa-habilidades {
-    background-color: rgb(170, 190, 184);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #ecf0f1;
     border: 2px solid black;
+    text-align: center;
     border-radius: 10px;
     padding: 20px;
     margin: 30px;
-    height: 300px;
-    width: 500px;
-    overflow: hidden;
+    height: 20em;
+    width: 40%;
+    overflow: scroll;
 }
 
 #disciplinas dd {
@@ -82,6 +124,9 @@ a {
 .lista-padrao {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     flex-wrap: wrap;
 }
 

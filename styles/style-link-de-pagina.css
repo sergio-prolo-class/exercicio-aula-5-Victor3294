@@ -1,12 +1,10 @@
 .link-de-pagina {
+    color: #ecf0f1;
     text-decoration: none;
-    color: #000;
-    margin: 10px;
-    transition: 1s;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
 .link-de-pagina:hover {
-    color: #13099e;
-    text-decoration: underline;
-    font-size: 1.35em;
+    color: #1abc9c;
 }
