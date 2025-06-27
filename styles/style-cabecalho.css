@@ -3,7 +3,6 @@
     width: 100%;
     color: #fff;
     height: 64px;
-    /* altura fixa */
     z-index: 100;
     top: 0;
     left: 0;
@@ -14,7 +13,6 @@
     background-color: #d36868;
     color: #fff;
     margin-bottom: 2em;
-    /* Remover height */
 }
 
 .nav-cabecalho-loja {
