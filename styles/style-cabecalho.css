@@ -24,3 +24,12 @@
     top: 0;
     z-index: 100;
 }
+
+/* Celulares médios e maiores */
+@media (max-width: 767px) {
+    .nav-cabecalho-loja {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}

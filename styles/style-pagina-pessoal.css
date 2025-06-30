@@ -142,10 +142,15 @@ a {
     margin-bottom: 20px;
 }
 
-
+.tabela-responsiva {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
 
 .tabela-padrao {
     width: 100%;
+    min-width: 600px;
     border-collapse: separate;
     border-spacing: 0;
     background: #fff;
@@ -163,16 +168,6 @@ a {
     margin-bottom: 8px;
     padding-top: 8px;
 }
-
-/* .tabela-padrao thead tr:first-child th {
-    background: #fff;
-    color: #1976d2;
-    font-size: 1.15em;
-    border: none;
-    text-align: center;
-    padding-top: 16px;
-    padding-bottom: 0;
-} */
 
 .container {
     display: flex;
@@ -318,4 +313,153 @@ a {
 .lista-filme-e-site li::first-letter {
     text-transform: capitalize;
     font-size: 1.05em;
+}
+
+@media (max-width: 480px) {
+    .container-texto-cabecalho {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .container-texto-cabecalho p {
+        font-size: 0.95em;
+    }
+
+    .container-lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container-lista-padrao {
+        width: 95%;
+        height: auto;
+    }
+
+    .container-tabela {
+        padding: 4px 0;
+    }
+
+    .tabela-padrao {
+        min-width: 400px;
+        font-size: 0.88em;
+    }
+
+    .tabela-padrao td img {
+        max-height: 24px;
+        max-width: 60px;
+    }
+
+    .tabela-padrao th,
+    .tabela-padrao td {
+        padding: 4px 1px;
+    }
+
+    .secao-flex {
+        width: 95%;
+        padding: 1em;
+    }
+
+    .coluna-lista-filme ul,
+    .coluna-lista-site ul {
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .coluna-lista-site,
+    .coluna-lista-filme {
+        width: 100%;
+        text-align: center;
+    }
+
+    .coluna-galeria {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .imagem-responsiva {
+        width: 100%;
+        height: auto;
+        max-width: 44%;
+    }
+}
+
+/* Celulares médios e maiores */
+@media (min-width: 481px) and (max-width: 767px) {
+    .container-texto-cabecalho {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .container-texto-cabecalho p {
+        font-size: 0.95em;
+    }
+
+    .container-lista {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container-lista-padrao {
+        width: 75%;
+        height: auto;
+    }
+
+
+    .container-tabela {
+        padding: 8px 0;
+    }
+
+    .tabela-padrao {
+        min-width: 520px;
+        font-size: 0.93em;
+    }
+
+    .tabela-padrao th,
+    .tabela-padrao td {
+        padding: 6px 2px;
+    }
+
+    .secao-flex {
+        width: 95%;
+        padding: 1em;
+    }
+
+    .coluna-lista-site,
+    .coluna-lista-filme {
+        text-align: center;
+        width: 100%;
+    }
+
+    .coluna-lista-filme ul,
+    .coluna-lista-site ul {
+        width: 100%;
+        list-style: none;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin: 0;
+    }
+
+    .imagem-responsiva {
+        width: 100%;
+        height: auto;
+        max-width: 49%;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .tabela-padrao {
+        min-width: 700px;
+        font-size: 0.98em;
+    }
+
+    .tabela-padrao th,
+    .tabela-padrao td {
+        padding: 8px 4px;
+    }
 }
