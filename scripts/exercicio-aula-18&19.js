@@ -34,6 +34,33 @@ listaDepoimentos.forEach(element => {
 });
 novaSecao.append(depoimentos)
 document.body.append(novaSecao)
+
+//Exercicio 05 aula-19
+const botaoCarrosselDireita = document.createElement('button');
+const botaoCarrosselEsquerda = document.createElement('button');
+let contador = 0;
+botaoCarrosselDireita.innerText = "->";
+botaoCarrosselEsquerda.innerText = "<-";
+depoimentos.children[1].classList.toggle('somiu')
+depoimentos.children[2].classList.toggle('somiu')
+botaoCarrosselDireita.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (contador != listaDepoimentos.length - 1) {
+        depoimentos.children[contador].classList.toggle('somiu')
+        contador++;
+        depoimentos.children[contador].classList.toggle('somiu')
+    }
+})
+botaoCarrosselEsquerda.addEventListener('click', (event) => {
+    event.preventDefault()
+    if (contador != 0) {
+        depoimentos.children[contador].classList.toggle('somiu')
+        contador--;
+        depoimentos.children[contador].classList.toggle('somiu')
+    }
+})
+novaSecao.append(botaoCarrosselDireita)
+novaSecao.append(botaoCarrosselEsquerda)
 //Exercicio 02
 const containerProdutosLoja = document.getElementById('secao-grid-loja');
 containerProdutosLoja.children[0].remove();
