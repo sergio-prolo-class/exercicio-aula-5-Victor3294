@@ -75,18 +75,126 @@ h1 {
     font-size: 2em;
 }
 
-/* @media (max-width: 480px) { ... } */
-/* 
-/* Celulares médios e maiores
-@media (max-width: 767px) {
-    .nav-cabecalho-loja {
+/* Responsividade para celulares pequenos */
+@media (max-width: 480px) {
+    .container {
+        height: auto;
+        padding: 12px 2vw;
+        gap: 6px;
+    }
+
+    .container-formulario {
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        width: 98vw;
+        min-width: unset;
+        padding: 0.8em;
+    }
+
+    .container-input,
+    .container-botao {
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .input-padrao {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    .botao-padrao {
+        width: 100%;
+        font-size: 1em;
+        padding: 0.5em;
     }
 }
 
-Tablets e dispositivos pequenos
+/* Responsividade para celulares médios e maiores */
+@media (max-width: 767px) {
+    .container {
+        height: auto;
+        padding: 16px 4vw;
+        gap: 10px;
+    }
+
+    .container-formulario {
+        flex-direction: column;
+        width: 95vw;
+        min-width: unset;
+        padding: 1em;
+    }
+
+    .container-input,
+    .container-botao {
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .input-padrao {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    label {
+        font-size: 1.05em;
+    }
+
+    .botao-padrao {
+        width: 100%;
+        font-size: 1em;
+        padding: 0.5em;
+    }
+}
+
+/* Responsividade para tablets e dispositivos pequenos */
 @media (min-width: 768px) and (max-width: 1024px) {
-    ...
-} */
+    .container {
+        height: auto;
+        padding: 24px 8vw;
+        gap: 12px;
+    }
+
+    .container-formulario {
+        width: 70vw;
+        min-width: unset;
+        padding: 1.2em;
+    }
+
+    .container-input,
+    .container-botao {
+        width: 48%;
+    }
+
+    .input-padrao {
+        width: 100%;
+        font-size: 1.05em;
+    }
+
+    h1 {
+        font-size: 1.7em;
+        text-align: center;
+    }
+
+    label {
+        font-size: 1.1em;
+    }
+
+    .botao-padrao {
+        width: 100%;
+        font-size: 1.05em;
+        padding: 0.6em;
+    }
+}

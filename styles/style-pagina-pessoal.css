@@ -452,6 +452,52 @@ a {
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
+    .container-texto-cabecalho {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .container-lista {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container-lista-padrao {
+        width: 60%;
+        height: auto;
+    }
+
+    .secao-flex {
+        width: 90%;
+        padding: 1.5em;
+    }
+
+    .coluna-lista-filme,
+    .coluna-lista-site {
+        width: 100%;
+        text-align: center;
+    }
+
+    .coluna-lista-filme ul,
+    .coluna-lista-site ul {
+        width: 100%;
+        list-style: none;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin: 0;
+    }
+
+    .coluna-galeria {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .imagem-responsiva {
+        width: 100%;
+        height: auto;
+        max-width: 49%;
+    }
 
     .tabela-padrao {
         min-width: 700px;

@@ -99,12 +99,3 @@ window.addEventListener('DOMContentLoaded', () => {
 
 })
 
-
-/*
-2. Capture os dados do formulário de contato a cada alteração para evitar que o usuário
-tenha que preencher tudo de novo se ele interromper o preenchimento. Ao carregar a
-página, esses dados não submetidos devem ser usados para preencher o formulário.
-SOBRE A TAREFA 2: Não consegui achar um evento que se encaixa para esse objetivo, então fiz ele salvar no submit, 
-toda hora que for pressionado.
-3. Crie uma tabela dinâmica com os contatos salvos na localStorage
- */
